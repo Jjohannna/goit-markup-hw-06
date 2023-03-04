@@ -21,6 +21,10 @@ body {
   font-size: 16px;
 }
 
+button {
+  cursor: pointer;
+}
+
 p,
 h1,
 h2,
@@ -538,15 +542,32 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.subscribe-wrap {
+  display: inline-flex;
+
+  margin-left: 16px;
+}
+
+.subscribe-icon {
+  position: absolute;
+  margin-left: 24px;
+}
+
 .subscribe-btn {
+  position: relative;
   width: 165px;
   height: 40px;
-  padding: 8px 24px;
-  margin-left: 24px;
+  padding-right: 64px;
+
   background-color: var(--accent-color);
   border-radius: 4px;
-  border-color: var(--accent-color);
+  border-color: transparent;
   color: var(--invert-white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:focus {
+  background-color: var(--accent-color-focus);
 }
 
 /* Socials */
